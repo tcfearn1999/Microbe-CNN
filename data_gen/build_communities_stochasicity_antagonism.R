@@ -1,5 +1,3 @@
-#!/bin/R
-
 # setup ####
 # install necessary packages, if not installed already
 if(!requireNamespace("devtools",quietly = TRUE)){
@@ -151,10 +149,10 @@ for(i in trial_number){
   
   ## save files ####
   # compose file names
-  resident_fn_01 <- file.path("/scratch/general/vast/u6049572/Micro_matrices/stochasticity",paste0("trial-",i,"_resident-community","_ubiq-",rand.ubiq,"_strength-",rand.strength,".csv"))
-  resident_fn_02 <- file.path("/scratch/general/vast/u6049572/Micro_matrices/antagonism",paste0("trial-",i,"_resident-community","_ubiq-",rand.ubiq,"_strength-",rand.strength,".csv"))
-  donor_diff_fn <- file.path("/scratch/general/vast/u6049572/Micro_matrices/antagonism",paste0("trial-",i,"_donor-difference_antag","_ubiq-",rand.ubiq,"_strength-",rand.strength,".csv"))
-  donor_diff_null_fn <- file.path("/scratch/general/vast/u6049572/Micro_matrices/stochasticity",paste0("trial-",i,"_donor-difference_nullmodel","_noise_",rand.stochast,".csv"))
+  resident_fn_01 <- file.path("put_path",paste0("trial-",i,"_resident-community","_ubiq-",rand.ubiq,"_strength-",rand.strength,".csv"))
+  resident_fn_02 <- file.path("put_path",paste0("trial-",i,"_resident-community","_ubiq-",rand.ubiq,"_strength-",rand.strength,".csv"))
+  donor_diff_fn <- file.path("put_path",paste0("trial-",i,"_donor-difference_antag","_ubiq-",rand.ubiq,"_strength-",rand.strength,".csv"))
+  donor_diff_null_fn <- file.path("put_path",paste0("trial-",i,"_donor-difference_nullmodel","_noise_",rand.stochast,".csv"))
   
   # save csv files
   write_csv(as.data.frame(resident_ra),resident_fn_01)

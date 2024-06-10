@@ -1,0 +1,13 @@
+numpy
+scipy
+scikit-learn >= 0.22
+matplotlib
+torch
+grad-cam
+torchcam
+tensorflow
+keras
+pandas
+pillow
+umap-learn
+pathlib

@@ -1,4 +1,3 @@
-#!/bin/python
 from pyDeepInsight import ImageTransformer
 from pyDeepInsight.utils import Norm2Scaler
 from sklearn.model_selection import train_test_split
