@@ -23,7 +23,7 @@ Opensource code for a poster presented at the mycological society of America ann
 
     `python ~/preprocessing/DeepInsight_Image_gen.py`
 
-NOTE:must run this for both antagonism and stochasticity files seperately, changing the file pathes each time
+    NOTE: Must run this for both antagonism and stochasticity files seperately, changing the file pathes each time
 
 6. Train and Test Neural network. Change the file paths and parameters in the appropriate files(ResNet or CNN). Run the follwoing code:
 
