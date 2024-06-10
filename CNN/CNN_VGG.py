@@ -79,7 +79,7 @@ class VGG19_TwoInputs_Classifier:
         x = Concatenate()([Flatten()(x1), Flatten()(x2)])
         x = Dense(4096, activation='relu')(x)
         x = Dense(4096, activation='relu')(x)
-        outputs = Dense(1, activation='sigmoid')(x)
+        outputs = Dense(2, activation='sigmoid')(x)
 
         model = Model(inputs=[resident, donor], outputs=outputs)
         return model

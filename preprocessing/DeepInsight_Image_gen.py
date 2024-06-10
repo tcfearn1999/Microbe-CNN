@@ -12,10 +12,10 @@ from pathlib import Path
 import umap.umap_ as umap
 
 #directory where microbial matrices are formed
-data_directory = Path("/scratch/general/vast/u6049572/Micro_matrices/antagonism")
+data_directory = Path("Put_path")
 
 #directory where you want the output to put saved
-data_deepInsight = Path("/scratch/general/vast/u6049572/DeepInsight/antagonism")
+data_deepInsight = Path("Put_path")
 
 tf.config.threading.set_inter_op_parallelism_threads(12)
 
